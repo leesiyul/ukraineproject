@@ -4,8 +4,6 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Ukrlive</title>
-		<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script
-		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 	</head>
 	<style>
 	ul {
@@ -16,52 +14,6 @@
 		float: left;
 		margin-left: 20px;
 	}	
-		.tabs-container {
-			width: 100%;
-		}
-		div#tabs-nav {
-			position: relative;
-			display: flex;
-			justify-content: flex-start;
-		}
-		div#tabs-nav a:nth-child(even) {
-			margin: 0 3px;
-		}
-		a.tabs-menu {
-			display: inline-block;
-			background-color: #1179ac;
-			font-size: 12px;
-			font-family: Arial,Helvetica,sans-serif;
-			color: #fff;
-			padding: 5px 10px;
-			font-weight: bold;
-			text-decoration: none;
-			border: solid 2px #1179ac;
-			border-bottom: 0;
-			border-radius: 3px 3px 0 0;
-		}
-		a.tabs-menu.tabs-menu-active {
-			background-color: #fff;
-			border: solid 2px #1179ac;
-			color: #6b6b6b;
-			border-bottom: 0;
-		}
-		.tabs-content {
-			border: solid 2px #1179ac;
-			margin-top: -2px;
-			background-color: #fff;
-			overflow: hidden;
-			line-height: 1.5;
-		}
-		.tabs-panel {
-			display: none;
-			min-height: 150px;
-			overflow: auto;
-			padding: 10px;
-			height: 500px;
-			font-size: 14px;
-}
-
 	</style>
 	<body>
 	<ul class="ul">
@@ -71,6 +23,9 @@
 		<li><a href="news.html">현재 소식</a></li>
 		<li><a href="map.html">지도</a></li>
 		<li><a href="donate.html">후원</a></li>
+		<br>
+		<br>
+		<span class="notranslate"><del>관련 정보를 받아오는 Liveuamap 서비스에 장애가 지속되어 일시적으로 운영이 중단됩니다. 죄송합니다.</del><br>트위터에서의 내용들로 임시 운영합니다.</span>
 		<br>
 		<br>
                 <!-- Google 번역 -->
@@ -86,64 +41,13 @@
 	                }
                 </script>
                 <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-		<script>
-$(function() {
-	$("#tabs-nav a").click(function(event) {
-		event.preventDefault();
-		$("#tabs-nav a").removeClass("tabs-menu-active");
-		$(this).addClass("tabs-menu-active");
-		$(".tabs-panel").hide();
-		var tab_id = $(this).data("target");
-		$("#"+tab_id).show();
-	});
-});
-</script>
                 <br>
-		<div id="hcg-tabs-1" class="tabs-container">
-
- <div id="tabs-nav">
-	<a href="#" data-target="tab_1" class="tabs-menu tabs-menu-active">Woofers</a>
-	<a href="#" data-target="tab_2" class="tabs-menu">Moshe Schwartz</a>
-	<a href="#" data-target="tab_3" class="tabs-menu">Kemal</a>
-	<a href="#" data-target="tab_4" class="tabs-menu">OSINTtechnical</a>
-	<a href="#" data-target="tab_5" class="tabs-menu">BNO News</a>
- </div>
-
- <div class="tabs-content">
-	<div id="tab_1" class="tabs-panel" style="display:block">
-		<div class="flex-content">
-			<a class="twitter-timeline" width="auto" height="500" href="https://twitter.com/NotWoofers?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</div>
-
-	<div id="tab_2" class="tabs-panel">
-		<div class="flex-content">
-			<a class="twitter-timeline" width="auto" height="500" href="https://twitter.com/YWNReporter?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</div>
-
-	<div id="tab_3" class="tabs-panel">
-		<div class="flex-content">
-			<a class="twitter-timeline" width="auto" height="500" href="https://twitter.com/kemal_115?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</div>
-
-	<div id="tab_4" class="tabs-panel">
-		<div class="flex-content">
-			<a class="twitter-timeline" width="auto" height="500" href="https://twitter.com/Osinttechnical?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</div>
-
-	<div id="tab_5" class="tabs-panel">
-		<div class="flex-content">
-			<a class="twitter-timeline" width="auto" height="500" href="https://twitter.com/BNONews?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-		</div>
-	</div>
-
- </div>
-
-</div>
-    		<br>
+			<a class="twitter-timeline" width="19%" height="472" href="https://twitter.com/NotWoofers?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" width="19%" height="472" href="https://twitter.com/YWNReporter?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" width="19%" height="472" href="https://twitter.com/kemal_115?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" width="19%" height="472" href="https://twitter.com/Osinttechnical?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" width="19%" height="472" href="https://twitter.com/BNONews?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+		<br>
 		<br>
 <span class="notranslate">
 <style type="text/css">
